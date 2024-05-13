@@ -11,7 +11,7 @@ public class Stack {
         this.top = -1;
     }
 
-    public Object stack(Object element) {
+    public Object add(Object element) {
         if (size == capacity)
             throw new IllegalStateException("The stack is full");
         top++;
@@ -20,7 +20,7 @@ public class Stack {
         return element;
     }
 
-    public Object unstack() {
+    public Object pop() {
         if (size == 0)
             throw new IllegalStateException("The stack is empty");
         Object removed = elements[top];
