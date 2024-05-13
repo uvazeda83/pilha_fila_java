@@ -39,7 +39,7 @@ public class Stack {
         return size == 0;
     }
 
-    public int size() {
+    public int stackSize() {
         return size;
     }
 }
